@@ -1,10 +1,9 @@
 package com.example.demo;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class DatabaseTest {
-
     @Test
     void testSingleton() {
         var database1 = Database.getInstance();
@@ -12,5 +11,4 @@ public class DatabaseTest {
 
         Assertions.assertSame(database1, database2);
     }
-
 }

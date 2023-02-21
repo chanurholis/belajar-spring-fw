@@ -1,11 +1,11 @@
 package com.example.demo;
 
 import com.example.demo.data.Foo;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 
 public class PrimaryBeanConfiguration {
-
     @Primary
     @Bean
     public Foo foo1() {
@@ -16,5 +16,4 @@ public class PrimaryBeanConfiguration {
     public Foo foo2() {
         return new Foo();
     }
-
 }

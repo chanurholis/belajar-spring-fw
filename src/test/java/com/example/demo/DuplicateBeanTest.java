@@ -1,14 +1,14 @@
 package com.example.demo;
 
 import com.example.demo.data.Foo;
-import org.junit.jupiter.api.Assertions;
+
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
+import org.junit.jupiter.api.Assertions;
 import org.springframework.context.ApplicationContext;
+import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class DuplicateBeanTest {
-
     @Test
     void testDuplicateError() {
         ApplicationContext context = new AnnotationConfigApplicationContext(DuplicateBean.class);
@@ -27,5 +27,4 @@ public class DuplicateBeanTest {
 
         Assertions.assertNotSame(foo1, foo2);
     }
-
 }

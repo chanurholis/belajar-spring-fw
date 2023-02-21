@@ -1,14 +1,14 @@
 package com.example.demo;
 
 import com.example.demo.data.Foo;
+
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class BeanNameTest {
-
     private ApplicationContext applicationContext;
 
     @BeforeEach
@@ -26,5 +26,4 @@ public class BeanNameTest {
         Assertions.assertNotSame(foo, secondFoo);
         Assertions.assertNotSame(firstFoo, secondFoo);
     }
-
 }

@@ -1,7 +1,6 @@
 package com.example.demo;
 
 public class Database {
-
     private static Database database;
 
     public static Database getInstance() {
@@ -11,6 +10,4 @@ public class Database {
 
         return database;
     }
-
-
 }

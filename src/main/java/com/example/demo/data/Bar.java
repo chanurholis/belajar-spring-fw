@@ -1,5 +1,5 @@
 package com.example.demo.data;
 
-public class Foo {
+public class Bar {
     // code ...
 }

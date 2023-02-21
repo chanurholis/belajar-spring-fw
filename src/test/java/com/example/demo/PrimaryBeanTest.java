@@ -8,7 +8,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class PrimaryBeanTest {
-
     private ApplicationContext applicationContext;
 
     @BeforeEach
@@ -26,5 +25,4 @@ public class PrimaryBeanTest {
         Assertions.assertNotSame(foo, foo2);
         Assertions.assertNotSame(foo1, foo2);
     }
-
 }
